@@ -7,6 +7,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
 
     <!-- FONTE -->
@@ -16,8 +17,63 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
 
-    <title>Criando rede social</title>
+    <!-- javascript -->
+    <script type="module" src="./src/scripts/index.js" defer></script>
+
+    <title>TeckPosters</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header__container">
+      <img src="./src/assets/img/logo.svg" alt="">
+      <span class="header__exit">Sair</span>
+    </header>
+    <main>
+      <section class="makePost__container">
+        <figure class="makePost__userCard">
+          <img class="makePost__userPhoto" src="./src/assets/img/user1.svg" alt="">
+          <div class="makePost__userLabel">
+            <h3 class="makePost__userName">Samuel Leão</h3>
+            <h3 class="makePost__userTitle">Front end Engineer</h3>
+          </div>
+        </figure>
+        <form class="makePost__form">
+          <input class="makePost__title" placeholder="Digitar título do post" type="text" required>
+          <textarea class="makePost__description" placeholder="Digitar descrição do post" type="text" required></textarea>
+          <button class="makePost__button generic__button" type="submit" >Postar</button>
+        </form>
+      </section>
+      <aside class="sugestion__container">
+        <h2 class="sugestion__title">sugestões para vecê seguir</h2>
+        <ul class="sugestion__deck">
+          <H2>Nada? Houve algo de errado</H2>
+        </ul>
+      </aside>
+      <section class="posts__container">
+        <h2 class="posts__mainTitle">Posts</h2>
+        <ul class="posts__deck">
+          <li class="posts__card">
+            <figure class="userCard__figure"><img class="userCard__userPhoto" src="./src/assets/img/user2.svg"><div class="userCard__userLabel"><h3 class="userCard__userName">Samuel Persuhn</h3><h3 class="userCard__userTitle">Front end Engineer</h3></div></figure>
+            <H2 class="posts__title">Como criar uma interface Como criar uma interface Como criar uma interface</H2>
+            <p class="posts__text"> hoje vamos conversar Como criar uma interface Como criar uma interface Como criar uma interface</p>
+            
+            <div class="posts__menu">
+              <button class="posts__button">Abrir Post</button>
+              <figure class="posts__like">
+                <img src="./src/assets/img/like.svg" alt="">
+                <span>25</span>
+              </figure>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+    </main>
+    <dialog class="modal__container">
+      <h2>aaaaa</h2>
+    </dialog>
+  </body>
 </html>

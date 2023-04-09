@@ -1,0 +1,281 @@
+
+/* Header */
+.header__container{
+    min-height: 9vh;
+    background-color: var(--grey-color-1);
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    
+    gap: 30vw;
+}
+
+.header__exit{
+    color: var(--grey-color-5);
+    font: var(--font-text-1)
+}
+
+/* Makepost */
+.makePost__container{
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+/* Makepost usercard */
+.makePost__userCard{
+    display: flex;
+    gap: .5rem;
+}
+
+.makePost__userPhoto{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.makePost__userLabel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.makePost__userName{
+    font: var(--font-title-2);
+}
+
+.makePost__userTitle{
+    font: var(--font-text-2)
+}
+
+/* makepost form formulario do post */
+
+.makePost__form{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.makePost__title, .makePost__description{
+    width: calc(90% - 20px);
+    height: 40px;
+    padding: 5px ;
+    border: 2px solid var(--grey-color-3);
+    border-radius: 4px;
+    size: 2;
+    font: var(--font-text-2);
+}
+
+.makePost__description{
+    width: calc(90% - 32px);
+    height: 100px;
+    
+}
+.makePost__title:focus{
+    border: 2px solid var(--brand-color-1);
+}
+.makePost__description:focus{
+    border: 2px solid var(--brand-color-1);
+}
+.makePost__button{
+    align-self: flex-end;
+    margin-right: 10vw;
+}
+/* sugestion */
+
+.sugestion__container{
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.sugestion__title{
+    font: var(--font-title-2);
+}
+
+/* generic usercard */
+.sugestion__deck{
+    height: 130px;
+    display: flex;
+    overflow-x: scroll;
+}
+.userCard__container{
+    
+    padding-top: 1rem;
+    padding-left: .25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+}
+.userCard__figure{
+    display: flex;
+    gap: .5rem;
+}
+.userCard__userCard{
+    display: flex;
+    gap: .5rem;
+}
+
+.userCard__userPhoto{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.userCard__userLabel{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.userCard__userName{
+    font: var(--font-title-2);
+}
+
+.userCard__userTitle{
+    font: var(--font-text-2)
+}
+
+.userCard__button{
+    width: 6rem;
+}
+
+/* posts */
+.posts__container{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.posts__mainTitle{
+    padding-left: 1rem;
+    font: var(--font-title-1)
+}
+
+.posts__deck{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.posts__card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.posts__title{
+    font: var(--font-title-1);
+}
+
+.posts__text{
+    width: 95%;
+    font: var(--font-text-1);
+}
+
+.posts__menu{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.posts__button{
+    background-color: var(--grey-color-1);
+    color: var(--white-color-fixed);
+    padding: .4rem;
+    border-radius: 4px;
+}
+.posts__button:hover{
+    background-color: var(--grey-color-3);
+}
+.posts__like{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* modal */
+.modal__container{
+    width: 85vw;
+    border: none;
+}
+
+.exitButton{
+    width: 2rem;
+    height: 2rem;
+    font-family: nunito;
+    font-size: 1.5rem;
+    text-align: center;
+    text-justify: auto;
+
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+.exitButton:hover{
+    background-color: var(--grey-color-1);
+    color: var(--grey-color-4);
+}
+
+/* desktop ajusts */
+@media (min-width: 768px){
+    section, form{
+        width: 60vw;
+    }
+
+    aside{
+        width: 40vw;
+        position: absolute;
+        right: 1rem;
+        top: 100px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .sugestion__deck{
+        flex-direction: column;
+        overflow-x: visible;
+        gap: 20px;
+    }
+    .userCard__container{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .userCard__button {
+        height: 30px;
+        align-self: center;
+    }
+
+    .modal__container{
+        width: 60vw;
+}
+
+}
+
+/* Configurações genericas que podem ser reutilizadas em outras partes do html */
+/*    buttons    */
+.generic__button{
+    background-color: var(--brand-color-1);
+    color: var(--white-color-fixed);
+    padding: .4rem;
+    border-radius: 4px;
+}
+
+.generic__button:hover{
+    background-color: var(--brand-color-2);
+}
+
+.button__outline{
+    border: 2px solid var(--grey-color-0);
+    background-color: var(--grey-color-5);
+    color: var(--grey-color-0);
+    padding: .4rem;
+    border-radius: 4px;
+}
+

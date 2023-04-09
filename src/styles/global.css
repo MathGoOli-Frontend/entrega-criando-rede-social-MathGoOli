@@ -1,0 +1,33 @@
+:root{
+    /* Brand Colors */
+    --brand-color-1: #4263EB;
+    --brand-color-2: #364FC7;
+
+    /* Grey Colors */
+    --grey-color-0: #0A0C0D;
+    --grey-color-1: #212529;
+    --grey-color-2: #495057;
+    --grey-color-3: #868E96;
+    --grey-color-4: #DEE2E6;
+    --grey-color-5: #F8F9FA;
+    --grey-color-opacity-1: rgba(33, 37, 41, 0.5);
+
+    /* Other colors */
+    --white-color-fixed: #ffffff;
+
+    --like-color: #D7443E;
+    /* Font Settings */
+    --font-family-1: Inter;
+
+    /* font:       |font- | font-| font-|font-size/      |font-family|  */
+    /*             | style| vari | wei  |line-height     |           |  */
+    /*             |      |  ant | ght  |                |           |  */    
+    --font-title-1: normal  normal 700    1.75rem/2.5rem   Inter;
+    --font-title-2: normal  normal 600    1.25rem/1.5rem   Inter;
+    --font-text-1:  normal  normal 400    1rem/1.75rem     Inter;
+    --font-text-2:  normal  normal 400    0.875rem/1rem    Inter;
+    --font-text-3:  normal  normal 400    0.75rem/1rem     Inter;
+    
+}
+
+   
