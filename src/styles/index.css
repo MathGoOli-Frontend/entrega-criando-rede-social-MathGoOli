@@ -1,6 +1,7 @@
 
 /* Header */
 .header__container{
+    width: 100vw;
     min-height: 9vh;
     background-color: var(--grey-color-1);
     display: flex;
@@ -9,6 +10,11 @@
     align-items: center;
     
     gap: 30vw;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .header__exit{
@@ -18,7 +24,7 @@
 
 /* Makepost */
 .makePost__container{
-    padding-top: 1rem;
+    padding-top: calc(1rem + 9vh);
     padding-left: 2rem;
 }
 
